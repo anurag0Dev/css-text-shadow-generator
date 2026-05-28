@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssTextShadow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full h-screen">
+    <section class="max-w-7xl h-screen m-auto">
+        <header class="flex flex-col md:flex-row justify-between items-center w-full border-b border-gray-300 shadow-sm px-3 py-4 under">
+            <h1 class="text-lg font-bold">Text <span class="text-red-500">Shadow</span></h1>
+            <nav class="flex flex-col gap-2 items-center">
+                <ul class="flex items-center gap-3 text-gray-600">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="terms.html">Privacy Policy</a></li>
+                </ul>
+                <form class=""><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Sud6rQ4lQhm1EM" async> </script> </form>
+            </nav>
+        </header>   
+        <section class="hero w-full px-10 py-4  ">
+            <textarea class="w-full rounded-sm  h-fit shadow-lg text-5xl py-5 text-center outline-none h-[400px]" name="userinput" id="userinput">
+CSS TEXT SHADOW
+            </textarea>
+            <div class="codePreview">
+                <p class="font-bold">CSS :</p>
+                <div class="css border rounded-sm p-3 mb-2 bg-gray-900 text-white flex items-center justify-between">
+                    <p id="cssCode">text-shadow: 0px 2px 2px black;</p>
+                    <button id="copyCss" class="border p-2 text-sm rounded-sm shadow-lg hover:text-black transition-all ease-out duration-300 hover:bg-white cursor-pointer">Copy</button>
+                </div>
+                <p class="font-bold">Tailwind CSS :</p>
+
+                <div class="tailwindcss border p-3 rounded-sm bg-gray-900 text-white flex items-centers justify-between">
+                    <p id="tailwindCode">[text-shadow: 10px 9px 18px #000000]</p>
+                    <button id="copyTailwind" class="border p-2 text-sm rounded-sm shadow-lg hover:text-black transition-all ease-out duration-300 hover:bg-white cursor-pointer">Copy</button>
+                </div>
+            </div>
+        </section>
+        <section class="controls px-10">
+            <form id="controls" class="flex items-center gap-3 flex-col">
+                <div class="checkBoxes flex items-center gap-5">
+                    <span>
+                        <label for="">Bold</label>
+                        <input class="" type="checkbox" name="bold">
+                    </span>
+                    <span>
+                        <label for="">Italic</label>
+                        <input type="checkbox" name="Italic">
+                    </span>
+                    <span>
+                        <label for="">Underline</label>
+                        <input type="checkbox" name="underline">
+                    </span>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-3">
+                <label for="">background color</label>
+                <input type="color" value="white" name="backgroudColor">
+                
+                <label for="">Text color</label>
+                <input type="color" name="textColor" value="ffffff">
+
+                <label for="">Shadow Color</label>
+                <input type="color" name="shadowcolor">
+                </div>
+               
+
+                <label for="x">horizontal </label>
+                <input class="w-full" type="range" min="0" max="100" value="0" name="horizontal">
+
+                <label for="x">vertical </label>
+                <input class="w-full" type="range" min="0" max="100" value="0" name="vertical">
+
+                <label for="x">Blur</label>
+                <input class="w-full" type="range" min="0" max="100" value="0" name="blur">
+
+            </form>       
+        </section>
+        <section class="ad">
+
+        </section>
+        <article class="about px-10" id="about">
+            <h1 class="mt-4 text-center font-bold text-xl mb-2">About CSS Text Shadow Generator</h1>
+            <p class="text-center text-sm">The CSS Text shadow Generator is a simple and powerfull online too that helps developers and designers create buttiful text shadow effects instantly . instead of manually writing complex css code, you can customize shadow values visually and copy the Generated code with single click <br> 
+            
+            This tool allows you to adjust horizontal and vertical shadow positions , Blur , spread shadow color and opacity in real time. it is prefect for creating modern heading glowing text, neon effects, soft shadows , and styling typography for websites and web applications.
+            <br>
+            Whether you are a beginner learning css or an experinced front end developer, the text shadow Generator make designing faster and easier. you can preview changes instantly and experiment with different shadow style to improve your website's visual apperance. 
+        </p>
+        <h1 class="font-bold text-center text-lg underline mt-3 mb-2">Fetures</h1>
+        <ul class="list-decimal text-sm">
+            <li>Live text shadow preview</li>
+            <li>Esay to use sliders and controls </li>
+            <li>copy css code instantly</li>
+            <li>Response and beginnere-frinedly design</li>
+            <li>supports multiple styles</li>
+            <li>prefect for html css and tailwindcsss projects</li>
+        </ul>
+        <h1 class="font-bold text-lg mt-3 mb-2 underline">Why use this tool</h1>
+            <p class="text-sm">Writing css shadow manually can take time and require constant adjustment. This Generator helps you save time , improve creativity, and build professional-looking ui designs without hassle</p>
+
+        </article>
+        <section class="ad">
+
+        </section>
+
+        <section id="contact" class="contact px-10" >
+            <form action="https://formspree.io/f/mgvevole" method="post" id="contact-form" class="flex flex-col items-center justify-center gap-3">
+
+                <label class="font-bold text-xl underline mt-3">Contact</label>
+                <label for="name"></label>
+                <input required class="border p-2 rounded-md w-full md:w-[400px] outline-none" type="text" name="name" placeholder="Enter you name">
+               
+                <label for="email"></label>
+                <input required class="border p-2 rounded-md w-full md:w-[400px] outline-none" type="text" name="email" type="email" placeholder="Enter your email">
+                <label for="dec"></label>
+                <textarea class="border p-2 rounded-md w-full md:w-[400px] outline-none" type="text" name="dec" id="dec" placeholder="Your message"></textarea>
+                <input class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-100 hover:text-black  border border-blue-600 transition-all ease-in-out duration-300" type="submit" value="Submit">
+            </form>
+
+        </section>
+
+        <footer class="w-full h-32">
+            <div class="socialmedia text-center mt-3">
+                <p class="text-gray-700">Follow me on <a class="text-blue-600" href="https://www.instagram.com/anurag_anuraj/">Instagram</a> , <a class="text-blue-600" href="">Facebook</a>, <a class="text-blue-600" href="">Pinterest</a></p>
+            </div>
+            
+            <div class="text-center text-gray-600 mt-5 text-sm">
+                <p>Created by <a class="text-lg hover:bg-gray-800 hover:p-2 hover:text-white transition-all ease-in-out duration-300 rounded-lg shadow-sm" href="https://www.instagram.com/anurag_anuraj/">Anurag</a></p>
+                <form class="mt-3"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Sud6rQ4lQhm1EM" async> </script> </form>
+            </div>
+
+            <div class="cssshadowcopy rights reserved messag text-center mt-10  text-gray-500 text-sm">
+                <p id="2026-rights"></p>
+            </div>
+        </footer>
+        </section>
+    
+    
+        <script src="app.js"></script>
+        <script>
+           
+        </script>
+    
+</body>
+</html>
+
